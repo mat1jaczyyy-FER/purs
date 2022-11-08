@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov  8 17:48:58 2022" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov  8 18:12:07 2022" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="v3" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -34,7 +34,7 @@
     <MODULE COREREVISION="2" FULLNAME="/led_blinker_0" HWVERSION="1.0" INSTANCE="led_blinker_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="led_blinker" VLNV="ESDL:user:led_blinker:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CLK_divider_width" VALUE="3"/>
+        <PARAMETER NAME="CLK_divider_width" VALUE="26"/>
         <PARAMETER NAME="Component_Name" VALUE="v3_led_blinker_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -60,7 +60,7 @@
     <MODULE COREREVISION="2" FULLNAME="/led_blinker_1" HWVERSION="1.0" INSTANCE="led_blinker_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="led_blinker" VLNV="ESDL:user:led_blinker:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CLK_divider_width" VALUE="5"/>
+        <PARAMETER NAME="CLK_divider_width" VALUE="28"/>
         <PARAMETER NAME="Component_Name" VALUE="v3_led_blinker_1_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>

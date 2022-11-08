@@ -36,7 +36,7 @@
         "inst_hier_path": "led_blinker_0",
         "parameters": {
           "CLK_divider_width": {
-            "value": "3"
+            "value": "26"
           }
         }
       },
@@ -47,7 +47,7 @@
         "inst_hier_path": "led_blinker_1",
         "parameters": {
           "CLK_divider_width": {
-            "value": "5"
+            "value": "28"
           }
         }
       }

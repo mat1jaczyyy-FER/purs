@@ -166,13 +166,13 @@ proc create_root_design { parentCell } {
   # Create instance: led_blinker_0, and set properties
   set led_blinker_0 [ create_bd_cell -type ip -vlnv ESDL:user:led_blinker:1.0 led_blinker_0 ]
   set_property -dict [ list \
-   CONFIG.CLK_divider_width {3} \
+   CONFIG.CLK_divider_width {26} \
  ] $led_blinker_0
 
   # Create instance: led_blinker_1, and set properties
   set led_blinker_1 [ create_bd_cell -type ip -vlnv ESDL:user:led_blinker:1.0 led_blinker_1 ]
   set_property -dict [ list \
-   CONFIG.CLK_divider_width {5} \
+   CONFIG.CLK_divider_width {28} \
  ] $led_blinker_1
 
   # Create port connections

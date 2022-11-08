@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Tue Nov  8 17:49:39 2022
+-- Date        : Tue Nov  8 18:12:49 2022
 -- Host        : mat1-PC running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               h:/FER/7.semestar/purs/lab/matijaca_dominik/v3/vjezba3.gen/sources_1/bd/v3/ip/v3_led_blinker_1_0/v3_led_blinker_1_0_stub.vhdl

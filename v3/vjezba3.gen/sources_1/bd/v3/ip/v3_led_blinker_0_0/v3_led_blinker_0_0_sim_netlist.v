@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Tue Nov  8 17:49:39 2022
+// Date        : Tue Nov  8 18:12:49 2022
 // Host        : mat1-PC running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               h:/FER/7.semestar/purs/lab/matijaca_dominik/v3/vjezba3.gen/sources_1/bd/v3/ip/v3_led_blinker_0_0/v3_led_blinker_0_0_sim_netlist.v
@@ -43,55 +43,306 @@ module v3_led_blinker_0_0_led_blinker
   input clk;
 
   wire clk;
-  wire [1:0]clk_divider;
-  wire \clk_divider[0]_i_1_n_0 ;
-  wire \clk_divider[1]_i_1_n_0 ;
-  wire \clk_divider[2]_i_1_n_0 ;
+  wire \clk_divider[0]_i_2_n_0 ;
+  wire \clk_divider_reg[0]_i_1_n_0 ;
+  wire \clk_divider_reg[0]_i_1_n_1 ;
+  wire \clk_divider_reg[0]_i_1_n_2 ;
+  wire \clk_divider_reg[0]_i_1_n_3 ;
+  wire \clk_divider_reg[0]_i_1_n_4 ;
+  wire \clk_divider_reg[0]_i_1_n_5 ;
+  wire \clk_divider_reg[0]_i_1_n_6 ;
+  wire \clk_divider_reg[0]_i_1_n_7 ;
+  wire \clk_divider_reg[12]_i_1_n_0 ;
+  wire \clk_divider_reg[12]_i_1_n_1 ;
+  wire \clk_divider_reg[12]_i_1_n_2 ;
+  wire \clk_divider_reg[12]_i_1_n_3 ;
+  wire \clk_divider_reg[12]_i_1_n_4 ;
+  wire \clk_divider_reg[12]_i_1_n_5 ;
+  wire \clk_divider_reg[12]_i_1_n_6 ;
+  wire \clk_divider_reg[12]_i_1_n_7 ;
+  wire \clk_divider_reg[16]_i_1_n_0 ;
+  wire \clk_divider_reg[16]_i_1_n_1 ;
+  wire \clk_divider_reg[16]_i_1_n_2 ;
+  wire \clk_divider_reg[16]_i_1_n_3 ;
+  wire \clk_divider_reg[16]_i_1_n_4 ;
+  wire \clk_divider_reg[16]_i_1_n_5 ;
+  wire \clk_divider_reg[16]_i_1_n_6 ;
+  wire \clk_divider_reg[16]_i_1_n_7 ;
+  wire \clk_divider_reg[20]_i_1_n_0 ;
+  wire \clk_divider_reg[20]_i_1_n_1 ;
+  wire \clk_divider_reg[20]_i_1_n_2 ;
+  wire \clk_divider_reg[20]_i_1_n_3 ;
+  wire \clk_divider_reg[20]_i_1_n_4 ;
+  wire \clk_divider_reg[20]_i_1_n_5 ;
+  wire \clk_divider_reg[20]_i_1_n_6 ;
+  wire \clk_divider_reg[20]_i_1_n_7 ;
+  wire \clk_divider_reg[25]_i_1_n_3 ;
+  wire \clk_divider_reg[25]_i_1_n_6 ;
+  wire \clk_divider_reg[25]_i_1_n_7 ;
+  wire \clk_divider_reg[4]_i_1_n_0 ;
+  wire \clk_divider_reg[4]_i_1_n_1 ;
+  wire \clk_divider_reg[4]_i_1_n_2 ;
+  wire \clk_divider_reg[4]_i_1_n_3 ;
+  wire \clk_divider_reg[4]_i_1_n_4 ;
+  wire \clk_divider_reg[4]_i_1_n_5 ;
+  wire \clk_divider_reg[4]_i_1_n_6 ;
+  wire \clk_divider_reg[4]_i_1_n_7 ;
+  wire \clk_divider_reg[8]_i_1_n_0 ;
+  wire \clk_divider_reg[8]_i_1_n_1 ;
+  wire \clk_divider_reg[8]_i_1_n_2 ;
+  wire \clk_divider_reg[8]_i_1_n_3 ;
+  wire \clk_divider_reg[8]_i_1_n_4 ;
+  wire \clk_divider_reg[8]_i_1_n_5 ;
+  wire \clk_divider_reg[8]_i_1_n_6 ;
+  wire \clk_divider_reg[8]_i_1_n_7 ;
+  wire \clk_divider_reg_n_0_[0] ;
+  wire \clk_divider_reg_n_0_[10] ;
+  wire \clk_divider_reg_n_0_[11] ;
+  wire \clk_divider_reg_n_0_[12] ;
+  wire \clk_divider_reg_n_0_[13] ;
+  wire \clk_divider_reg_n_0_[14] ;
+  wire \clk_divider_reg_n_0_[15] ;
+  wire \clk_divider_reg_n_0_[16] ;
+  wire \clk_divider_reg_n_0_[17] ;
+  wire \clk_divider_reg_n_0_[18] ;
+  wire \clk_divider_reg_n_0_[19] ;
+  wire \clk_divider_reg_n_0_[1] ;
+  wire \clk_divider_reg_n_0_[20] ;
+  wire \clk_divider_reg_n_0_[21] ;
+  wire \clk_divider_reg_n_0_[22] ;
+  wire \clk_divider_reg_n_0_[23] ;
+  wire \clk_divider_reg_n_0_[24] ;
+  wire \clk_divider_reg_n_0_[2] ;
+  wire \clk_divider_reg_n_0_[3] ;
+  wire \clk_divider_reg_n_0_[4] ;
+  wire \clk_divider_reg_n_0_[5] ;
+  wire \clk_divider_reg_n_0_[6] ;
+  wire \clk_divider_reg_n_0_[7] ;
+  wire \clk_divider_reg_n_0_[8] ;
+  wire \clk_divider_reg_n_0_[9] ;
   wire reset;
   wire reset_sync;
   wire square;
+  wire [3:1]\NLW_clk_divider_reg[25]_i_1_CO_UNCONNECTED ;
+  wire [3:2]\NLW_clk_divider_reg[25]_i_1_O_UNCONNECTED ;
 
-  LUT2 #(
-    .INIT(4'h1)) 
-    \clk_divider[0]_i_1 
-       (.I0(clk_divider[0]),
-        .I1(reset_sync),
-        .O(\clk_divider[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT3 #(
-    .INIT(8'h06)) 
-    \clk_divider[1]_i_1 
-       (.I0(clk_divider[1]),
-        .I1(clk_divider[0]),
-        .I2(reset_sync),
-        .O(\clk_divider[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT4 #(
-    .INIT(16'h006A)) 
-    \clk_divider[2]_i_1 
-       (.I0(square),
-        .I1(clk_divider[1]),
-        .I2(clk_divider[0]),
-        .I3(reset_sync),
-        .O(\clk_divider[2]_i_1_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \clk_divider[0]_i_2 
+       (.I0(\clk_divider_reg_n_0_[0] ),
+        .O(\clk_divider[0]_i_2_n_0 ));
   FDRE \clk_divider_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .D(\clk_divider[0]_i_1_n_0 ),
-        .Q(clk_divider[0]),
-        .R(1'b0));
+        .D(\clk_divider_reg[0]_i_1_n_7 ),
+        .Q(\clk_divider_reg_n_0_[0] ),
+        .R(reset_sync));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \clk_divider_reg[0]_i_1 
+       (.CI(1'b0),
+        .CO({\clk_divider_reg[0]_i_1_n_0 ,\clk_divider_reg[0]_i_1_n_1 ,\clk_divider_reg[0]_i_1_n_2 ,\clk_divider_reg[0]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b1}),
+        .O({\clk_divider_reg[0]_i_1_n_4 ,\clk_divider_reg[0]_i_1_n_5 ,\clk_divider_reg[0]_i_1_n_6 ,\clk_divider_reg[0]_i_1_n_7 }),
+        .S({\clk_divider_reg_n_0_[3] ,\clk_divider_reg_n_0_[2] ,\clk_divider_reg_n_0_[1] ,\clk_divider[0]_i_2_n_0 }));
+  FDRE \clk_divider_reg[10] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[8]_i_1_n_5 ),
+        .Q(\clk_divider_reg_n_0_[10] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[11] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[8]_i_1_n_4 ),
+        .Q(\clk_divider_reg_n_0_[11] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[12] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[12]_i_1_n_7 ),
+        .Q(\clk_divider_reg_n_0_[12] ),
+        .R(reset_sync));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \clk_divider_reg[12]_i_1 
+       (.CI(\clk_divider_reg[8]_i_1_n_0 ),
+        .CO({\clk_divider_reg[12]_i_1_n_0 ,\clk_divider_reg[12]_i_1_n_1 ,\clk_divider_reg[12]_i_1_n_2 ,\clk_divider_reg[12]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\clk_divider_reg[12]_i_1_n_4 ,\clk_divider_reg[12]_i_1_n_5 ,\clk_divider_reg[12]_i_1_n_6 ,\clk_divider_reg[12]_i_1_n_7 }),
+        .S({\clk_divider_reg_n_0_[15] ,\clk_divider_reg_n_0_[14] ,\clk_divider_reg_n_0_[13] ,\clk_divider_reg_n_0_[12] }));
+  FDRE \clk_divider_reg[13] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[12]_i_1_n_6 ),
+        .Q(\clk_divider_reg_n_0_[13] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[14] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[12]_i_1_n_5 ),
+        .Q(\clk_divider_reg_n_0_[14] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[15] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[12]_i_1_n_4 ),
+        .Q(\clk_divider_reg_n_0_[15] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[16] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[16]_i_1_n_7 ),
+        .Q(\clk_divider_reg_n_0_[16] ),
+        .R(reset_sync));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \clk_divider_reg[16]_i_1 
+       (.CI(\clk_divider_reg[12]_i_1_n_0 ),
+        .CO({\clk_divider_reg[16]_i_1_n_0 ,\clk_divider_reg[16]_i_1_n_1 ,\clk_divider_reg[16]_i_1_n_2 ,\clk_divider_reg[16]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\clk_divider_reg[16]_i_1_n_4 ,\clk_divider_reg[16]_i_1_n_5 ,\clk_divider_reg[16]_i_1_n_6 ,\clk_divider_reg[16]_i_1_n_7 }),
+        .S({\clk_divider_reg_n_0_[19] ,\clk_divider_reg_n_0_[18] ,\clk_divider_reg_n_0_[17] ,\clk_divider_reg_n_0_[16] }));
+  FDRE \clk_divider_reg[17] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[16]_i_1_n_6 ),
+        .Q(\clk_divider_reg_n_0_[17] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[18] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[16]_i_1_n_5 ),
+        .Q(\clk_divider_reg_n_0_[18] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[19] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[16]_i_1_n_4 ),
+        .Q(\clk_divider_reg_n_0_[19] ),
+        .R(reset_sync));
   FDRE \clk_divider_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .D(\clk_divider[1]_i_1_n_0 ),
-        .Q(clk_divider[1]),
-        .R(1'b0));
+        .D(\clk_divider_reg[0]_i_1_n_6 ),
+        .Q(\clk_divider_reg_n_0_[1] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[20] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[20]_i_1_n_7 ),
+        .Q(\clk_divider_reg_n_0_[20] ),
+        .R(reset_sync));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \clk_divider_reg[20]_i_1 
+       (.CI(\clk_divider_reg[16]_i_1_n_0 ),
+        .CO({\clk_divider_reg[20]_i_1_n_0 ,\clk_divider_reg[20]_i_1_n_1 ,\clk_divider_reg[20]_i_1_n_2 ,\clk_divider_reg[20]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\clk_divider_reg[20]_i_1_n_4 ,\clk_divider_reg[20]_i_1_n_5 ,\clk_divider_reg[20]_i_1_n_6 ,\clk_divider_reg[20]_i_1_n_7 }),
+        .S({\clk_divider_reg_n_0_[23] ,\clk_divider_reg_n_0_[22] ,\clk_divider_reg_n_0_[21] ,\clk_divider_reg_n_0_[20] }));
+  FDRE \clk_divider_reg[21] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[20]_i_1_n_6 ),
+        .Q(\clk_divider_reg_n_0_[21] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[22] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[20]_i_1_n_5 ),
+        .Q(\clk_divider_reg_n_0_[22] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[23] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[20]_i_1_n_4 ),
+        .Q(\clk_divider_reg_n_0_[23] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[24] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[25]_i_1_n_7 ),
+        .Q(\clk_divider_reg_n_0_[24] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[25] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[25]_i_1_n_6 ),
+        .Q(square),
+        .R(reset_sync));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \clk_divider_reg[25]_i_1 
+       (.CI(\clk_divider_reg[20]_i_1_n_0 ),
+        .CO({\NLW_clk_divider_reg[25]_i_1_CO_UNCONNECTED [3:1],\clk_divider_reg[25]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\NLW_clk_divider_reg[25]_i_1_O_UNCONNECTED [3:2],\clk_divider_reg[25]_i_1_n_6 ,\clk_divider_reg[25]_i_1_n_7 }),
+        .S({1'b0,1'b0,square,\clk_divider_reg_n_0_[24] }));
   FDRE \clk_divider_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .D(\clk_divider[2]_i_1_n_0 ),
-        .Q(square),
-        .R(1'b0));
+        .D(\clk_divider_reg[0]_i_1_n_5 ),
+        .Q(\clk_divider_reg_n_0_[2] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[3] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[0]_i_1_n_4 ),
+        .Q(\clk_divider_reg_n_0_[3] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[4] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[4]_i_1_n_7 ),
+        .Q(\clk_divider_reg_n_0_[4] ),
+        .R(reset_sync));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \clk_divider_reg[4]_i_1 
+       (.CI(\clk_divider_reg[0]_i_1_n_0 ),
+        .CO({\clk_divider_reg[4]_i_1_n_0 ,\clk_divider_reg[4]_i_1_n_1 ,\clk_divider_reg[4]_i_1_n_2 ,\clk_divider_reg[4]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\clk_divider_reg[4]_i_1_n_4 ,\clk_divider_reg[4]_i_1_n_5 ,\clk_divider_reg[4]_i_1_n_6 ,\clk_divider_reg[4]_i_1_n_7 }),
+        .S({\clk_divider_reg_n_0_[7] ,\clk_divider_reg_n_0_[6] ,\clk_divider_reg_n_0_[5] ,\clk_divider_reg_n_0_[4] }));
+  FDRE \clk_divider_reg[5] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[4]_i_1_n_6 ),
+        .Q(\clk_divider_reg_n_0_[5] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[6] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[4]_i_1_n_5 ),
+        .Q(\clk_divider_reg_n_0_[6] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[7] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[4]_i_1_n_4 ),
+        .Q(\clk_divider_reg_n_0_[7] ),
+        .R(reset_sync));
+  FDRE \clk_divider_reg[8] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[8]_i_1_n_7 ),
+        .Q(\clk_divider_reg_n_0_[8] ),
+        .R(reset_sync));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \clk_divider_reg[8]_i_1 
+       (.CI(\clk_divider_reg[4]_i_1_n_0 ),
+        .CO({\clk_divider_reg[8]_i_1_n_0 ,\clk_divider_reg[8]_i_1_n_1 ,\clk_divider_reg[8]_i_1_n_2 ,\clk_divider_reg[8]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\clk_divider_reg[8]_i_1_n_4 ,\clk_divider_reg[8]_i_1_n_5 ,\clk_divider_reg[8]_i_1_n_6 ,\clk_divider_reg[8]_i_1_n_7 }),
+        .S({\clk_divider_reg_n_0_[11] ,\clk_divider_reg_n_0_[10] ,\clk_divider_reg_n_0_[9] ,\clk_divider_reg_n_0_[8] }));
+  FDRE \clk_divider_reg[9] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\clk_divider_reg[8]_i_1_n_6 ),
+        .Q(\clk_divider_reg_n_0_[9] ),
+        .R(reset_sync));
   FDRE reset_sync_reg
        (.C(clk),
         .CE(1'b1),

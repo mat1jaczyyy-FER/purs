@@ -79,7 +79,7 @@ ARCHITECTURE v3_led_blinker_1_0_arch OF v3_led_blinker_1_0 IS
 BEGIN
   U0 : led_blinker
     GENERIC MAP (
-      CLK_divider_width => 5
+      CLK_divider_width => 28
     )
     PORT MAP (
       clk => clk,
