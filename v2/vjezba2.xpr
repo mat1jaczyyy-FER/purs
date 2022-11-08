@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="H:/FER/7. semestar/purs/lab/matijaca_dominik/v2/vjezba2.xpr">
+<Project Version="7" Minor="54" Path="H:/FER/7.semestar/purs/lab/matijaca_dominik/v2/vjezba2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="60a42db1c5ba44219f195fba3ca2a25f"/>

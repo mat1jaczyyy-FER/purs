@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov  8 17:48:58 2022" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="v3" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led_blinker_0" PORT="clk"/>
+        <CONNECTION INSTANCE="led_blinker_1" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset" SIGIS="undef" SIGNAME="External_Ports_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led_blinker_0" PORT="reset"/>
+        <CONNECTION INSTANCE="led_blinker_1" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LD2" SIGIS="undef" SIGNAME="led_blinker_0_square">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led_blinker_0" PORT="square"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LD3" SIGIS="undef" SIGNAME="led_blinker_1_square">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led_blinker_1" PORT="square"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/led_blinker_0" HWVERSION="1.0" INSTANCE="led_blinker_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="led_blinker" VLNV="ESDL:user:led_blinker:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CLK_divider_width" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="v3_led_blinker_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="undef" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="square" SIGIS="undef" SIGNAME="led_blinker_0_square">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LD2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/led_blinker_1" HWVERSION="1.0" INSTANCE="led_blinker_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="led_blinker" VLNV="ESDL:user:led_blinker:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CLK_divider_width" VALUE="5"/>
+        <PARAMETER NAME="Component_Name" VALUE="v3_led_blinker_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="undef" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="square" SIGIS="undef" SIGNAME="led_blinker_1_square">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LD3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
