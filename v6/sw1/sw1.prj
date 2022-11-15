@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="sw1" location="H:/FER/7.semestar/purs/lab/matijaca_dominik/v4/sw1" platform="H:/FER/7.semestar/purs/lab/matijaca_dominik/v4/zynq1/export/zynq1/zynq1.xpfm" platformUID="xilinx:zed::0.0(custom)" systemProject="sw1_system" sysConfig="zynq1" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="fbcb863f11fd9c447a7f7d77ab4df10a">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.250034243">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.991202269" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
