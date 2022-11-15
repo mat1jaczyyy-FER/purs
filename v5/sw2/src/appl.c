@@ -34,7 +34,7 @@ int main() {
 	XGpioPs_SetOutputEnablePin(&Gpio, LED, 1);
 
 	// main
-	for (int i = 0; sendbuf[i] != '\0'; i = XUartPs_Send(&Uart, sendbuf + i, 1));
+	for (int i = 0; sendbuf[i] != '\0'; i += XUartPs_Send(&Uart, sendbuf + i, 1));
 
 	while (1) {
 		XGpioPs_WritePin(&Gpio, LED, 1);
