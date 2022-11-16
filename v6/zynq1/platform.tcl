@@ -27,3 +27,7 @@ platform clean
 platform active {zynq1}
 platform config -updatehw {H:/FER/7.semestar/purs/lab/matijaca_dominik/v6/zynq1.xsa}
 platform generate
+platform clean
+platform active {zynq1}
+platform config -updatehw {H:/FER/7.semestar/purs/lab/matijaca_dominik/v6/zynq1.xsa}
+platform generate

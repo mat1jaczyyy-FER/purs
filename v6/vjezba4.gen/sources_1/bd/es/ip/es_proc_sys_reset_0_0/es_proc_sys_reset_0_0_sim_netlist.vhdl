@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
 -- Date        : Tue Nov 15 04:58:55 2022
 -- Host        : mat1-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               h:/FER/7.semestar/purs/lab/matijaca_dominik/v6/vjezba4.gen/sources_1/bd/es/ip/es_proc_sys_reset_0_0/es_proc_sys_reset_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top es_proc_sys_reset_0_0 -prefix
+--               es_proc_sys_reset_0_0_ es_proc_sys_reset_0_0_sim_netlist.vhdl
 -- Design      : es_proc_sys_reset_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,8 +25,6 @@ entity es_proc_sys_reset_0_0_cdc_sync is
     aux_reset_in : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of es_proc_sys_reset_0_0_cdc_sync : entity is "cdc_sync";
 end es_proc_sys_reset_0_0_cdc_sync;
 
 architecture STRUCTURE of es_proc_sys_reset_0_0_cdc_sync is
@@ -237,8 +235,6 @@ entity es_proc_sys_reset_0_0_upcnt_n is
     seq_cnt_en : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of es_proc_sys_reset_0_0_upcnt_n : entity is "upcnt_n";
 end es_proc_sys_reset_0_0_upcnt_n;
 
 architecture STRUCTURE of es_proc_sys_reset_0_0_upcnt_n is
@@ -403,8 +399,6 @@ entity es_proc_sys_reset_0_0_lpf is
     ext_reset_in : in STD_LOGIC;
     aux_reset_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of es_proc_sys_reset_0_0_lpf : entity is "lpf";
 end es_proc_sys_reset_0_0_lpf;
 
 architecture STRUCTURE of es_proc_sys_reset_0_0_lpf is
@@ -591,8 +585,6 @@ entity es_proc_sys_reset_0_0_sequence_psr is
     lpf_int : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of es_proc_sys_reset_0_0_sequence_psr : entity is "sequence_psr";
 end es_proc_sys_reset_0_0_sequence_psr;
 
 architecture STRUCTURE of es_proc_sys_reset_0_0_sequence_psr is
@@ -931,8 +923,6 @@ entity es_proc_sys_reset_0_0_proc_sys_reset is
   attribute C_NUM_PERP_ARESETN of es_proc_sys_reset_0_0_proc_sys_reset : entity is 1;
   attribute C_NUM_PERP_RST : integer;
   attribute C_NUM_PERP_RST of es_proc_sys_reset_0_0_proc_sys_reset : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of es_proc_sys_reset_0_0_proc_sys_reset : entity is "proc_sys_reset";
 end es_proc_sys_reset_0_0_proc_sys_reset;
 
 architecture STRUCTURE of es_proc_sys_reset_0_0_proc_sys_reset is

@@ -1825,15 +1825,15 @@ unsigned long ps7_mio_init_data_3_0[] = {
     // ..     ==> MASK : 0xF8000000U    VAL : 0x00000000U
     // .. 
     EMIT_MASKWRITE(0XF8000B68, 0xFFFFFFFFU ,0x00F9861CU),
-    // .. VREF_INT_EN = 0x0
-    // .. ==> 0XF8000B6C[0:0] = 0x00000000U
-    // ..     ==> MASK : 0x00000001U    VAL : 0x00000000U
-    // .. VREF_SEL = 0x0
-    // .. ==> 0XF8000B6C[4:1] = 0x00000000U
-    // ..     ==> MASK : 0x0000001EU    VAL : 0x00000000U
-    // .. VREF_EXT_EN = 0x3
-    // .. ==> 0XF8000B6C[6:5] = 0x00000003U
-    // ..     ==> MASK : 0x00000060U    VAL : 0x00000060U
+    // .. VREF_INT_EN = 0x1
+    // .. ==> 0XF8000B6C[0:0] = 0x00000001U
+    // ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
+    // .. VREF_SEL = 0x4
+    // .. ==> 0XF8000B6C[4:1] = 0x00000004U
+    // ..     ==> MASK : 0x0000001EU    VAL : 0x00000008U
+    // .. VREF_EXT_EN = 0x0
+    // .. ==> 0XF8000B6C[6:5] = 0x00000000U
+    // ..     ==> MASK : 0x00000060U    VAL : 0x00000000U
     // .. reserved_VREF_PULLUP_EN = 0x0
     // .. ==> 0XF8000B6C[8:7] = 0x00000000U
     // ..     ==> MASK : 0x00000180U    VAL : 0x00000000U
@@ -1853,7 +1853,7 @@ unsigned long ps7_mio_init_data_3_0[] = {
     // .. ==> 0XF8000B6C[14:14] = 0x00000000U
     // ..     ==> MASK : 0x00004000U    VAL : 0x00000000U
     // .. 
-    EMIT_MASKWRITE(0XF8000B6C, 0x00007FFFU ,0x00000260U),
+    EMIT_MASKWRITE(0XF8000B6C, 0x00007FFFU ,0x00000209U),
     // .. .. START: ASSERT RESET
     // .. .. RESET = 1
     // .. .. ==> 0XF8000B70[0:0] = 0x00000001U
@@ -5788,15 +5788,15 @@ unsigned long ps7_mio_init_data_2_0[] = {
     // ..     ==> MASK : 0xF8000000U    VAL : 0x00000000U
     // .. 
     EMIT_MASKWRITE(0XF8000B68, 0xFFFFFFFFU ,0x00F9861CU),
-    // .. VREF_INT_EN = 0x0
-    // .. ==> 0XF8000B6C[0:0] = 0x00000000U
-    // ..     ==> MASK : 0x00000001U    VAL : 0x00000000U
-    // .. VREF_SEL = 0x0
-    // .. ==> 0XF8000B6C[4:1] = 0x00000000U
-    // ..     ==> MASK : 0x0000001EU    VAL : 0x00000000U
-    // .. VREF_EXT_EN = 0x3
-    // .. ==> 0XF8000B6C[6:5] = 0x00000003U
-    // ..     ==> MASK : 0x00000060U    VAL : 0x00000060U
+    // .. VREF_INT_EN = 0x1
+    // .. ==> 0XF8000B6C[0:0] = 0x00000001U
+    // ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
+    // .. VREF_SEL = 0x4
+    // .. ==> 0XF8000B6C[4:1] = 0x00000004U
+    // ..     ==> MASK : 0x0000001EU    VAL : 0x00000008U
+    // .. VREF_EXT_EN = 0x0
+    // .. ==> 0XF8000B6C[6:5] = 0x00000000U
+    // ..     ==> MASK : 0x00000060U    VAL : 0x00000000U
     // .. VREF_PULLUP_EN = 0x0
     // .. ==> 0XF8000B6C[8:7] = 0x00000000U
     // ..     ==> MASK : 0x00000180U    VAL : 0x00000000U
@@ -5816,7 +5816,7 @@ unsigned long ps7_mio_init_data_2_0[] = {
     // .. ==> 0XF8000B6C[14:14] = 0x00000000U
     // ..     ==> MASK : 0x00004000U    VAL : 0x00000000U
     // .. 
-    EMIT_MASKWRITE(0XF8000B6C, 0x00007FFFU ,0x00000260U),
+    EMIT_MASKWRITE(0XF8000B6C, 0x00007FFFU ,0x00000209U),
     // .. .. START: ASSERT RESET
     // .. .. RESET = 1
     // .. .. ==> 0XF8000B70[0:0] = 0x00000001U
@@ -9688,15 +9688,15 @@ unsigned long ps7_mio_init_data_1_0[] = {
     // ..     ==> MASK : 0xF8000000U    VAL : 0x00000000U
     // .. 
     EMIT_MASKWRITE(0XF8000B68, 0xFFFFFFFFU ,0x00F9861CU),
-    // .. VREF_INT_EN = 0x0
-    // .. ==> 0XF8000B6C[0:0] = 0x00000000U
-    // ..     ==> MASK : 0x00000001U    VAL : 0x00000000U
-    // .. VREF_SEL = 0x0
-    // .. ==> 0XF8000B6C[4:1] = 0x00000000U
-    // ..     ==> MASK : 0x0000001EU    VAL : 0x00000000U
-    // .. VREF_EXT_EN = 0x3
-    // .. ==> 0XF8000B6C[6:5] = 0x00000003U
-    // ..     ==> MASK : 0x00000060U    VAL : 0x00000060U
+    // .. VREF_INT_EN = 0x1
+    // .. ==> 0XF8000B6C[0:0] = 0x00000001U
+    // ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
+    // .. VREF_SEL = 0x4
+    // .. ==> 0XF8000B6C[4:1] = 0x00000004U
+    // ..     ==> MASK : 0x0000001EU    VAL : 0x00000008U
+    // .. VREF_EXT_EN = 0x0
+    // .. ==> 0XF8000B6C[6:5] = 0x00000000U
+    // ..     ==> MASK : 0x00000060U    VAL : 0x00000000U
     // .. VREF_PULLUP_EN = 0x0
     // .. ==> 0XF8000B6C[8:7] = 0x00000000U
     // ..     ==> MASK : 0x00000180U    VAL : 0x00000000U
@@ -9713,7 +9713,7 @@ unsigned long ps7_mio_init_data_1_0[] = {
     // .. ==> 0XF8000B6C[14:14] = 0x00000000U
     // ..     ==> MASK : 0x00004000U    VAL : 0x00000000U
     // .. 
-    EMIT_MASKWRITE(0XF8000B6C, 0x000073FFU ,0x00000260U),
+    EMIT_MASKWRITE(0XF8000B6C, 0x000073FFU ,0x00000209U),
     // .. .. START: ASSERT RESET
     // .. .. RESET = 1
     // .. .. ==> 0XF8000B70[0:0] = 0x00000001U

@@ -58,7 +58,7 @@ int main() {
 		wait();
 	}
 
-	s8 step = 1;
+	s8 step = -1;
 	u8 curr = 0;
 
 	while (1) {
@@ -67,8 +67,8 @@ int main() {
 		wait();
 
 		u32 btnState = XGpio_DiscreteRead(&BTNs, 1);
-		if (btnState & 1) step = -1;
-		if (btnState & 3) step = 1;
+		if (btnState & 1) step = 1;
+		if (btnState & 2) step = -1;
 
 		curr = (curr + 7 + step) % 7;
 	}
