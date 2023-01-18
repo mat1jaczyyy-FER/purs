@@ -6,15 +6,16 @@
 #include <stdio.h>
 #include <ccblkfn.h>
 
-#define Nsamp 1000
+#define Nsamp (sizeof(signal)/sizeof(signal[0]))
 #define L 21
+#define Nout (Nsamp + L - 1)
 
 #include "signal_float_i.h"
 #include "coeffs_float_i.h"
 
 float delay[L];
 short idx_delay = 0;
-float izlbuf[Nsamp];
+float izlbuf[Nout];
 short idx_izlbuf = 0;
 
 #define USE_CIRCINDEX
@@ -42,31 +43,25 @@ void obrada_float(float sample) {
 		#endif
 	}
 	
-	// zapamti najnoviji uzorak
-	// cirkularno povecaj indeks delay niza (vidi napomenu)
-	
-	// u petlji akumuliraj umnoske stanja i koeficijenata, uz cirkularno
-	// inkrementiranje indeksa stanja (delay)
-	
 	izlbuf[idx_izlbuf++] = acc;
 }
 
 int main() {
 	int i;
-	cycle_t start_count;
-	cycle_t final_count;
+	cycle_t start_count, final_count;
 	
-	// init FIR
-	for (i = 0; i < L; i++) {
+	for (i = 0; i < L; i++)
 		delay[i] = 0;
-	}
 	
-	for (i = 0; i < Nsamp; i++) {
+	for (i = 0; i < Nout; i++) {
+		float next = i >= Nsamp? 0.0f : signal[i];
+		
 		START_CYCLE_COUNT(start_count);
-		obrada_float(signal[i]);
+		obrada_float(next);
 		STOP_CYCLE_COUNT(final_count, start_count);
+		
 		PRINT_CYCLES("Number of cycles: ", final_count);
-		printf("%f\n", izlbuf[i]);	
+		printf("izlbuf[%d] = %f\n", i, izlbuf[i]);
 	}
 	
 	return 0;
